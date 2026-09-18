@@ -1,0 +1,13 @@
+---
+Name: dscorefull.dll
+Author: Iván Cabrera
+Created: 2026-09-18
+Vendor: Microsoft
+ExpectedLocations:
+  - '%PROGRAMDATA%\Microsoft\Windows Defender\Platform'
+VulnerableExecutables:
+  - Path: '%PROGRAMDATA%\Microsoft\Windows Defender\Platform\MpDefenderCoreService.exe'
+    Type: Sideloading
+    Condition: 'version >= 1.0.26070.9'
+Resources:
+  - https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-windows
